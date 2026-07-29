@@ -3,6 +3,7 @@
 <div align="center">
 
 # ⚡ Welcome to My Digital Universe ⚡
+<p>"Every line of code is another star in my universe."</p>
 
 ### *"Building today what I dreamed of yesterday."*
 
