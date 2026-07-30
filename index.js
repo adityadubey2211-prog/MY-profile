@@ -21,3 +21,9 @@ for(let i=0;i<220;i++){
     star.style.opacity=Math.random();
     stars.appendChild(star);
 }
+
+const launch = document.querySelector(".launch-btn");
+const rocket = document.querySelector(".rocket")
+launch.addEventListener('click', ()=>{
+    rocket.classList.add("launch")
+})

@@ -85,8 +85,9 @@ body{
     border:none;
     border-radius:50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap:10px;
     cursor:pointer;
     background:#f85238;
     color:white;
@@ -102,6 +103,27 @@ body{
     0 0 20px #f8d838,
     0 0 60px #f86238,
     0 0 100px #f87838;
+}
+.rocket{
+    display: inline-block;
+}
+.rocket.launch{
+    animation: rocketLaunch 1.2s ease-in forwards;
+}
+@keyframes rocketLaunch{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    20%{
+        transform: translateY(-15px) rotate(-10deg);
+        scale:2;
+    }
+    100%{
+        scale:.5;
+        transform: translateY(-700px) rotate(-10deg);
+        opacity: 0;
+    }
 }
 .scroll{
     position:absolute;
@@ -204,7 +226,4 @@ body{
         top:60%;
         opacity:0;
     }
-}
-.rocket{
-    position: absolute;
 }
