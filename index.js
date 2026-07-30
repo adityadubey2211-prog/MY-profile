@@ -3,7 +3,6 @@ const text = "Aditya Dubey";
 type.textContent = "";
 let idx = 0;
 function typer(){
-    console.log("done")
     if(idx < text.length){
         type.innerHTML += text.charAt(idx);
         idx++;
@@ -13,7 +12,7 @@ function typer(){
 typer();
 const stars = document.getElementById("stars");
 
-for(let i=0;i<550;i++){
+for(let i=0;i<220;i++){
     const star=document.createElement("div");
     star.classList.add("star");
     star.style.left=Math.random()*100+"%";

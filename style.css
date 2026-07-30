@@ -29,13 +29,25 @@ body{
     right:-120px;
     background:
     radial-gradient(circle at 30% 30%,
-    #38BDF8,
-    #2563EB,
-    #1E3A8A);
+    #f8a838,
+    #eb5025ce,
+    #8a1e1e);
     box-shadow:
-    0 0 50px #2563EB,
-    0 0 120px #1D4ED8;
+    0 0 50px #eb2525,
+    0 0 120px #d81d1d;
+    animation: float 8s ease-in-out infinite;
 } 
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-25px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
 .hero{
     min-height:100vh;
     display:flex;
@@ -47,7 +59,7 @@ body{
 }
 .intro{
     font-size:1.2rem;
-    color:#38BDF8;
+    color:#f8bb38;
     margin-bottom:15px;
 }
 .hero h1{
@@ -72,21 +84,24 @@ body{
     padding:16px 40px;
     border:none;
     border-radius:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     cursor:pointer;
-    background:#38BDF8;
+    background:#f85238;
     color:white;
     font-size:1rem;
     font-weight:600;
     transition:.35s;
     box-shadow:
-    0 0 25px #38BDF8;
+    0 0 25px #f8385e;
 }
 .launch-btn:hover{
     transform:translateY(-5px);
     box-shadow:
-    0 0 20px #38BDF8,
-    0 0 60px #38BDF8,
-    0 0 100px #38BDF8;
+    0 0 20px #f8d838,
+    0 0 60px #f86238,
+    0 0 100px #f87838;
 }
 .scroll{
     position:absolute;
@@ -134,4 +149,62 @@ body{
         opacity:.2;
         transform:scale(1);
     }
+}
+.shooting-star1{
+    position:absolute;
+    width: 180px;
+    height:2px;
+    background:linear-gradient(90deg,rgb(44, 189, 238),transparent);
+    top:20%;
+    left:-200px;
+    transform: rotate(-165deg);
+    animation: shoot 6s linear infinite;
+}
+.shooting-star2{
+    position:absolute;
+    width: 480px;
+    height:2px;
+    background:linear-gradient(90deg,rgb(44, 189, 238),transparent);
+    top:80%;
+    left:-400px;
+    transform: rotate(-165deg);
+    animation: shoot 6s linear infinite;
+}
+.shooting-star3{
+    position:absolute;
+    width: 80px;
+    height:2px;
+    background:linear-gradient(90deg,rgb(44, 189, 238),transparent);
+    top:80%;
+    left:-400px;
+    transform: rotate(-165deg);
+    animation: shoot 6s linear infinite;
+}
+.shooting-star4{
+    position:absolute;
+    width: 380px;
+    height:2px;
+    background:linear-gradient(90deg,rgb(44, 189, 238),transparent);
+    top:80%;
+    left:-400px;
+    transform: rotate(-165deg);
+    animation: shoot 6s linear infinite;
+}
+@keyframes shoot {
+    0%{
+        left:-200px;
+        top:20%;
+        opacity: 0;
+    }
+    10%{
+        opacity:1;
+    }
+    100%{
+        left:120%;
+        top:60%;
+        opacity:0;
+    }
+}
+.rocket{
+    position: absolute;
 }
