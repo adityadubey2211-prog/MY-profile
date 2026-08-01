@@ -23,7 +23,13 @@ for(let i=0;i<220;i++){
 }
 
 const launch = document.querySelector(".launch-btn");
-const rocket = document.querySelector(".rocket")
+const rocket = document.querySelector(".rocket");
+const about = document.querySelector("#about");
 launch.addEventListener('click', ()=>{
     rocket.classList.add("launch")
 })
+rocket.addEventListener('animationend', ()=>{
+    about.style.display = "block";
+    about.scrollIntoView({behavior:"smooth"});
+    
+});
