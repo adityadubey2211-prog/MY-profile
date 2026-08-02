@@ -35,9 +35,9 @@ body{
     box-shadow:
     0 0 50px #eb2525,
     0 0 120px #d81d1d;
-    animation: float 8s ease-in-out infinite;
+    animation: float1 8s ease-in-out infinite;
 } 
-@keyframes float{
+@keyframes float1{
     0%{
         transform:translateY(0px);
     }
@@ -108,7 +108,7 @@ body{
     display: inline-block;
 }
 .rocket.launch{
-    animation: rocketLaunch 1.2s ease-in forwards;
+    animation: rocketLaunch 1.5s ease-in forwards;
 }
 @keyframes rocketLaunch{
     0%{
@@ -120,7 +120,7 @@ body{
         scale:2;
     }
     100%{
-        scale:.5;
+        scale:3;
         transform: translateY(-700px) rotate(-10deg);
         opacity: 0;
     }
@@ -295,4 +295,215 @@ body{
 .online{
     color:#f2f6f3;
     font-weight:700;
+}
+#skills{
+    min-height:100vh;
+    padding:80px 0;
+    position:relative;
+    display:none;
+}
+.skill-title{
+    text-align:center;
+    font-family:'Orbitron',sans-serif;
+    font-size:3rem;
+    letter-spacing:5px;
+    color:#38BDF8;
+    margin-bottom:80px;
+    text-shadow:0 0 20px #38BDF8;
+}
+.solar-system{
+    width:900px;
+    height:650px;
+    margin:auto;
+    margin-top:50px;
+    position:relative;
+    display:none;
+}
+.planets{
+    position:absolute;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Orbitron',sans-serif;
+    font-size:1rem;
+    font-weight:600;
+    color:white;
+    cursor:pointer;
+    transition:.4s ease;
+    animation:float 4s ease-in-out infinite;
+    display:none;
+}
+ .planets:hover{
+    transform:translateY(-15px) scale(1.08);
+    box-shadow:
+    0 0 20px currentColor,
+    0 0 50px currentColor;
+
+}
+.html{
+    top:40px;
+    left:120px;
+    background:
+    radial-gradient(circle at 30% 30%,
+    #ffb26b,
+    #ff6b35);
+
+}
+.css{
+    top:300px;
+    left:40px;
+    background:
+    radial-gradient(circle at 30% 30%,
+    #5bbcff,
+    #2563eb);
+}
+    
+.js{
+    top:160px;
+    right:120px;
+    background:
+    radial-gradient(circle at 30% 30%,
+    #ffe95c,
+    #facc15);
+    color:rgb(231, 222, 222);
+
+}
+.cpp{
+    bottom:50px;
+    left:220px;
+    background:
+    radial-gradient(circle at 30% 30%,
+    #6ea8ff,
+    #026f0d);
+
+}
+.git{
+    bottom:90px;
+    right:150px;
+    background:
+    radial-gradient(circle at 30% 30%,
+    #bae20c,
+    #e90eb2);
+}
+.python{
+    top:30px;
+    right:350px;
+    background:
+    radial-gradient(circle at 30% 30%,
+    #e27406,
+    #cb4106);
+
+}
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+/* #skills{
+    min-height:100vh;
+    padding:100px 0;
+} */
+
+/* Heading Container */
+
+.title-box{
+    text-align:center;
+    margin-bottom:90px;
+}
+
+/* Small Heading */
+
+.sub-title{
+    color:#94A3B8;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    font-size:.9rem;
+    margin-bottom:15px;
+    display:none;
+}
+
+/* Main Heading */
+
+.skill-title{
+
+    font-family:'Orbitron',sans-serif;
+    font-size:4rem;
+    letter-spacing:8px;
+
+    color:#38BDF8;
+
+    text-transform:uppercase;
+
+    text-shadow:
+    0 0 15px #38BDF8,
+    0 0 35px #38BDF8,
+    0 0 70px rgba(56,189,248,.4);
+
+    animation: glow 2.5s ease-in-out infinite;
+    display:none;
+}
+.line{
+
+    width:220px;
+    height:3px;
+
+    margin:25px auto;
+
+    border-radius:10px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #38BDF8,
+        white,
+        #38BDF8,
+        transparent
+
+    );
+
+    box-shadow:
+    0 0 10px #38BDF8,
+    0 0 25px #38BDF8;
+    display:none;
+}
+
+/* Glow Animation */
+
+@keyframes glow{
+
+    0%{
+
+        text-shadow:
+        0 0 15px #38BDF8,
+        0 0 30px #38BDF8;
+
+    }
+
+    50%{
+
+        text-shadow:
+        0 0 25px #38BDF8,
+        0 0 50px #38BDF8,
+        0 0 90px #38BDF8;
+
+    }
+
+    100%{
+
+        text-shadow:
+        0 0 15px #38BDF8,
+        0 0 30px #38BDF8;
+
+
+    }
+
 }

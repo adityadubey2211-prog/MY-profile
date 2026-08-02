@@ -1,0 +1,155 @@
+/* ===========================
+   PROJECTS SECTION
+=========================== */
+
+#projects{
+    min-height:100vh;
+    padding:100px 0;
+    display:none;
+}
+
+/* Container */
+
+.project-system{
+    width:900px;
+    height:650px;
+    margin:40px auto;
+    position:relative;
+}
+
+/* Heading */
+
+.project-title{
+    font-family:'Orbitron',sans-serif;
+    font-size:4rem;
+    letter-spacing:8px;
+    text-transform:uppercase;
+    color:#38BDF8;
+
+    text-shadow:
+    0 0 15px #38BDF8,
+    0 0 35px #38BDF8,
+    0 0 70px rgba(56,189,248,.4);
+
+    animation:glow 2.5s ease-in-out infinite;
+    display:none;
+}
+
+.project-line{
+    width:220px;
+    height:3px;
+    margin:25px auto;
+    border-radius:10px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #38BDF8,
+        white,
+        #38BDF8,
+        transparent
+    );
+
+    box-shadow:
+    0 0 10px #38BDF8,
+    0 0 25px #38BDF8;
+
+    display:none;
+}
+
+/* ===========================
+   PROJECT PLANETS
+=========================== */
+
+.project-planet{
+    position:absolute;
+
+    width:150px;
+    height:150px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    font-family:'Orbitron',sans-serif;
+    font-size:1rem;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.4s ease;
+
+    animation:float 4s ease-in-out infinite;
+
+    display:none;
+}
+
+.project-planet:hover{
+
+    transform:translateY(-15px) scale(1.1);
+
+    box-shadow:
+    0 0 25px currentColor,
+    0 0 60px currentColor;
+
+}
+
+/* ===========================
+   INDIVIDUAL PLANETS
+=========================== */
+
+.expense-flow{
+
+    top:40px;
+    left:120px;
+
+    background:
+    radial-gradient(circle at 30% 30%,
+    #7CFC98,
+    #0F9D58);
+
+}
+
+.movieverse{
+
+    top:280px;
+    left:40px;
+
+    background:
+    radial-gradient(circle at 30% 30%,
+    #D18BFF,
+    #7E22CE);
+
+}
+
+.weather-app{
+
+    top:120px;
+    right:90px;
+
+    background:
+    radial-gradient(circle at 30% 30%,
+    #8BE9FD,
+    #0EA5E9);
+
+}
+
+.todo-app{
+
+    bottom:60px;
+    right:170px;
+
+    background:
+    radial-gradient(circle at 30% 30%,
+    #FFD86B,
+    #F97316);
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}

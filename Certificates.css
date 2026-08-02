@@ -1,0 +1,120 @@
+#Certificates{
+    min-height:100vh;
+    padding:100px 0;
+    display:none;
+}
+.Certificates-title{
+    font-family:'Orbitron',sans-serif;
+    font-size:4rem;
+    text-align:center;
+    letter-spacing:8px;
+    color:#38BDF8;
+    text-transform:uppercase;
+    text-shadow:
+        0 0 15px #38BDF8,
+        0 0 35px #38BDF8,
+        0 0 70px rgba(56,189,248,.4);
+    animation:glow 2.5s infinite;
+    display:none;
+}
+.Certificates-line{
+    width:220px;
+    height:3px;
+    margin:25px auto 60px;
+    border-radius:10px;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #38BDF8,
+        white,
+        #38BDF8,
+        transparent
+    );
+    box-shadow:
+        0 0 10px #38BDF8,
+        0 0 25px #38BDF8;
+    display:none;
+}
+.Certificates-system{
+    width:900px;
+    height:600px;
+    margin:auto;
+    position:relative;
+    display:none;
+}
+.Certificate-planet,
+.Certificates-planet{
+    position:absolute;
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    cursor:pointer;
+    transition:.4s;
+    animation:float 4s ease-in-out infinite;
+}
+.Certificate-planet:hover,
+.Certificates-planet:hover{
+    transform:translateY(-15px) scale(1.08);
+    box-shadow:
+        0 0 30px currentColor,
+        0 0 60px currentColor;
+}
+.Certificate-planet span,
+.Certificates-planet span{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+.Certificate-planet a,
+.Certificates-planet a{
+    width:100%;
+    color:white;
+    text-decoration:none;
+    font-family:'Orbitron',sans-serif;
+    font-size:1rem;
+    font-weight:600;
+    text-align:center;
+    line-height:1.5;
+}
+.clash{
+    top:30px;
+    left:120px;
+    background:
+    radial-gradient(circle at 30% 30%,
+    #FFD86B,
+    #F59E0B);
+}
+.Intern{
+    top:70px;
+    right:100px;
+    background:
+    radial-gradient(circle at 30% 30%,
+    #7DD3FC,
+    #0284C7);
+}
+.chef{
+    bottom:60px;
+    left:360px;
+    background:
+    radial-gradient(circle at 30% 30%,
+    #D8B4FE,
+    #7E22CE);
+}
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
