@@ -13,7 +13,7 @@
 
 ### 🌍 Live Preview
 
-**Coming Soon...**
+**https://adityadubey2211-prog.github.io/MY-profile/**
 
 ---
 
