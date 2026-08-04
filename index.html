@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aditya | Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="project.css" />
     <link rel="stylesheet" href="Certificates.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="footer.css"/>
   </head>
   <body>
     <div id="space">
@@ -97,43 +97,27 @@
 
       <div class="project-system">
         <div class="project-planet expense-flow">
-          <span
-            ><a
+          <span><a
               href="https://adityadubey2211-prog.github.io/expence-flow/"
-              target="_blank"
-              >ExpenseFlow</a
-            ></span
-          >
+              target="_blank">ExpenseFlow</a></span>
         </div>
 
         <div class="project-planet movieverse">
-          <span
-            ><a
+          <span><a
               href="https://adityadubey2211-prog.github.io/MOVIENEX-/"
-              target="_blank"
-              >MovieVerse</a
-            ></span
-          >
+              target="_blank">MovieVerse</a></span>
         </div>
 
         <div class="project-planet weather-app">
-          <span
-            ><a
+          <span><a
               href="https://adityadubey2211-prog.github.io/Weather-app/"
-              target="_blank"
-              >Weather App</a
-            ></span
-          >
+              target="_blank">Weather App</a></span>
         </div>
 
         <div class="project-planet todo-app">
-          <span
-            ><a
+          <span><a
               href="https://adityadubey2211-prog.github.io/TO-DO-LIST/"
-              target="_blank"
-              >Todo App</a
-            ></span
-          >
+              target="_blank">Todo App</a></span>
         </div>
       </div>
     </section>
@@ -166,6 +150,134 @@
         </div>
       </div>
     </section>
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section id="contact" class="contact">
+
+      <div class="section-title">
+        <h2>Get In Touch</h2>
+        <p>Have a project in mind or just want to say hello? I'd love to hear
+          from you.</p>
+      </div>
+
+      <div class="contact-container">
+
+        <!-- Left Side -->
+        <div class="contact-info">
+
+          <h3>Let's Connect 🚀</h3>
+
+          <p>
+            I'm always open to discussing new projects,
+            collaborations, internship opportunities,
+            or simply chatting about technology.
+          </p>
+
+          <div class="info-box">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <span>adityadubey2211@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <i class="fa-brands fa-linkedin"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <a
+                href="https://www.linkedin.com/in/aditya-dubey-4182432a4/">Linked
+                in</a>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/adityadubey2211-prog">GIT-HUB</a>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Location</h4>
+              <span>Uttar Pradesh, India</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <form id="contact-form">
+
+          <div class="input-group">
+            <input type="text" name="user_name" placeholder="Your Name"
+              required>
+          </div>
+
+          <div class="input-group">
+            <input type="email" name="user_email" placeholder="Your Email"
+              required>
+          </div>
+
+          <div class="input-group">
+            <input type="text" name="subject" placeholder="Subject" required>
+          </div>
+
+          <div class="input-group">
+            <textarea name="message" placeholder="Write your message..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="send-btn">
+            🚀 Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+    <footer class="footer">
+
+      <div class="footer-content">
+
+        <h2>Aditya Dubey</h2>
+
+        <p>
+          Passionate Full Stack Developer • DSA Enthusiast • Open Source Learner
+        </p>
+
+        <div class="footer-socials">
+
+          <a href="https://github.com/adityadubey2211-prog" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/aditya-dubey-4182432a4/"
+            target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href="mailto:adityadubey2211@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+          © 2026 Aditya Dubey. All Rights Reserved.
+        </p>
+
+      </div>
+
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
